@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- адаптивность -->
+  <title>О нас — Бекем Курулуш</title>
+  <meta name="description" content="История, миссия, ценности и команда строительной компании.">
+  <!-- Bootstrap 5 (CSS) и наши стили -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- ===== ОБЩИЙ HEADER (логотип + навигация + бургер-меню) ===== -->
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="logo-mark">Б</span><span>Бекем Курулуш</span>
+      </a>
+      <!-- Кнопка-бургер для мобильных устройств -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link active" href="about.html">О нас</a></li><li class="nav-item"><a class="nav-link" href="works.html">Наши работы</a></li><li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="contacts.html">Заказать звонок</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="page-banner"><div class="container"><h1>О нас</h1></div></section>
+<!-- История компании -->
+<section class="section"><div class="container"><div class="row g-5 align-items-center">
+  <div class="col-lg-6"><h2 class="section-title text-start">Наша история</h2>
+    <p>Компания «Бекем Курулуш» начала работу в Бишкеке с небольших ремонтных объектов. Сегодня мы возводим частные дома и коммерческие помещения.</p>
+    <p>Название объединяет слова «бекем» — прочный и «курулуш» — строительство. Это наш главный принцип. <em>(Текст-заглушка: замените на реальную историю.)</em></p></div>
+  <div class="col-lg-6"><div class="ph ph-lg" role="img" aria-label="Фото: команда на объекте"><span>Фото: команда на объекте</span></div></div>
+</div></div></section>
+
+<!-- Цифры (замените на реальные) -->
+<section class="stats"><div class="container"><div class="row text-center g-4">
+  <div class="col-6 col-md-3"><strong>00+</strong><span>лет опыта</span></div>
+  <div class="col-6 col-md-3"><strong>000+</strong><span>проектов</span></div>
+  <div class="col-6 col-md-3"><strong>00</strong><span>специалистов</span></div>
+  <div class="col-6 col-md-3"><strong>00</strong><span>лет гарантии</span></div>
+</div></div></section>
+
+<!-- Миссия и ценности -->
+<section class="section"><div class="container">
+  <h2 class="section-title">Миссия и ценности</h2>
+  <div class="row g-4"><div class="col-md-4"><div class="card-box h-100"><h3>Миссия</h3><p>Создавать безопасное и комфортное жильё, которое служит поколениям.</p></div></div><div class="col-md-4"><div class="card-box h-100"><h3>Честность</h3><p>Говорим заказчику правду о сроках, стоимости и рисках.</p></div></div><div class="col-md-4"><div class="card-box h-100"><h3>Качество</h3><p>Используем проверенные материалы и контролируем каждый этап.</p></div></div></div>
+</div></section>
+
+<!-- Команда -->
+<section class="section bg-soft"><div class="container">
+  <h2 class="section-title">Наша команда</h2>
+  <div class="row g-4"><div class="col-6 col-lg-3 text-center"><div class="ph ph-sq" role="img" aria-label="Фото"><span>Фото</span></div><h3 class="h6 mt-3 mb-0">Ф. И. О.</h3><small class="text-muted">Генеральный директор</small></div><div class="col-6 col-lg-3 text-center"><div class="ph ph-sq" role="img" aria-label="Фото"><span>Фото</span></div><h3 class="h6 mt-3 mb-0">Ф. И. О.</h3><small class="text-muted">Главный инженер</small></div><div class="col-6 col-lg-3 text-center"><div class="ph ph-sq" role="img" aria-label="Фото"><span>Фото</span></div><h3 class="h6 mt-3 mb-0">Ф. И. О.</h3><small class="text-muted">Архитектор</small></div><div class="col-6 col-lg-3 text-center"><div class="ph ph-sq" role="img" aria-label="Фото"><span>Фото</span></div><h3 class="h6 mt-3 mb-0">Ф. И. О.</h3><small class="text-muted">Руководитель объектов</small></div></div>
+</div></section>
+<!-- Призыв к действию -->
+<section class="cta-band"><div class="container text-center">
+  <h2>Готовы обсудить ваш проект?</h2>
+  <p>Оставьте заявку — инженер бесплатно выедет на объект и подготовит смету.</p>
+  <a href="contacts.html" class="btn btn-accent btn-lg">Получить консультацию</a>
+</div></section>
+</main>
+
+<!-- ===== ОБЩИЙ FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="text-white">Бекем Курулуш</h5>
+        <p>Строим надёжно, как горы Ала-Тоо. Дома, ремонт, отделка и проектирование в Бишкеке и Чуйской области.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6 class="text-white">Навигация</h6>
+        <ul class="list-unstyled"><li><a href="index.html">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="works.html">Наши работы</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-5">
+        <h6 class="text-white">Контакты</h6>
+        <ul class="list-unstyled">
+          <li>г. Бишкек, пр. Чуй, 000 (заглушка)</li>
+          <li><a href="tel:+996555000000">+996 (555) 00-00-00</a></li>
+          <li><a href="mailto:info@bekem.kg">info@bekem.kg</a></li>
+          <li>Пн–Сб: 9:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary">
+    <p class="small mb-0">&copy; <span id="year">2026</span> Бекем Курулуш. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (бургер-меню) и наш скрипт -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

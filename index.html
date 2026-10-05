@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- адаптивность -->
+  <title>Главная — Бекем Курулуш</title>
+  <meta name="description" content="Строительная компания в Бишкеке: дома, ремонт, отделка, проектирование.">
+  <!-- Bootstrap 5 (CSS) и наши стили -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- ===== ОБЩИЙ HEADER (логотип + навигация + бургер-меню) ===== -->
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="logo-mark">Б</span><span>Бекем Курулуш</span>
+      </a>
+      <!-- Кнопка-бургер для мобильных устройств -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li><li class="nav-item"><a class="nav-link" href="works.html">Наши работы</a></li><li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li><li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="contacts.html">Заказать звонок</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- Hero-блок -->
+<section class="hero"><div class="container">
+  <div class="row align-items-center"><div class="col-lg-7">
+    <p class="eyebrow">Строительная компания · Бишкек</p>
+    <h1>Строим прочно. Строим по-кыргызски.</h1>
+    <p class="lead">«Бекем Курулуш» — «прочное строительство». Возводим дома и ремонтируем объекты в Бишкеке с гарантией качества.</p>
+    <a href="contacts.html" class="btn btn-accent btn-lg me-2 mb-2">Рассчитать стоимость</a>
+    <a href="works.html" class="btn btn-outline-light btn-lg mb-2">Наши работы</a>
+  </div></div>
+</div></section>
+
+<!-- Преимущества -->
+<section class="section"><div class="container">
+  <h2 class="section-title">Почему выбирают нас</h2>
+  <div class="row g-4"><div class="col-sm-6 col-lg-3"><div class="card-box text-center h-100"><div class="icon">🏔</div><h3>Надёжность</h3><p>Конструкции рассчитаны с учётом сейсмичности региона.</p></div></div><div class="col-sm-6 col-lg-3"><div class="card-box text-center h-100"><div class="icon">✔</div><h3>Качество</h3><p>Контроль на каждом этапе и гарантия на работы.</p></div></div><div class="col-sm-6 col-lg-3"><div class="card-box text-center h-100"><div class="icon">⏱</div><h3>Сроки</h3><p>Чёткий график и фиксированная смета в договоре.</p></div></div><div class="col-sm-6 col-lg-3"><div class="card-box text-center h-100"><div class="icon">🤝</div><h3>Прозрачность</h3><p>Фотоотчёты и понятная отчётность для заказчика.</p></div></div></div>
+</div></section>
+
+<!-- Краткий обзор услуг -->
+<section class="section bg-soft"><div class="container">
+  <h2 class="section-title">Наши услуги</h2>
+  <div class="row g-4"><div class="col-sm-6 col-lg-3"><div class="card-box h-100"><h3>Строительство домов</h3><p>Под ключ: от фундамента до кровли.</p></div></div><div class="col-sm-6 col-lg-3"><div class="card-box h-100"><h3>Ремонт квартир</h3><p>Капитальный и косметический ремонт.</p></div></div><div class="col-sm-6 col-lg-3"><div class="card-box h-100"><h3>Отделочные работы</h3><p>Черновая и чистовая отделка.</p></div></div><div class="col-sm-6 col-lg-3"><div class="card-box h-100"><h3>Проектирование</h3><p>Архитектурные и инженерные проекты.</p></div></div></div>
+  <div class="text-center mt-4"><a href="services.html" class="btn btn-primary">Все услуги</a></div>
+</div></section>
+<!-- Призыв к действию -->
+<section class="cta-band"><div class="container text-center">
+  <h2>Готовы обсудить ваш проект?</h2>
+  <p>Оставьте заявку — инженер бесплатно выедет на объект и подготовит смету.</p>
+  <a href="contacts.html" class="btn btn-accent btn-lg">Получить консультацию</a>
+</div></section>
+</main>
+
+<!-- ===== ОБЩИЙ FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="text-white">Бекем Курулуш</h5>
+        <p>Строим надёжно, как горы Ала-Тоо. Дома, ремонт, отделка и проектирование в Бишкеке и Чуйской области.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6 class="text-white">Навигация</h6>
+        <ul class="list-unstyled"><li><a href="index.html">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="works.html">Наши работы</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-5">
+        <h6 class="text-white">Контакты</h6>
+        <ul class="list-unstyled">
+          <li>г. Бишкек, пр. Чуй, 000 (заглушка)</li>
+          <li><a href="tel:+996555000000">+996 (555) 00-00-00</a></li>
+          <li><a href="mailto:info@bekem.kg">info@bekem.kg</a></li>
+          <li>Пн–Сб: 9:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary">
+    <p class="small mb-0">&copy; <span id="year">2026</span> Бекем Курулуш. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (бургер-меню) и наш скрипт -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

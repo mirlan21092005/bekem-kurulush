@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- адаптивность -->
+  <title>Контакты — Бекем Курулуш</title>
+  <meta name="description" content="Адрес, телефон и форма обратной связи строительной компании в Бишкеке.">
+  <!-- Bootstrap 5 (CSS) и наши стили -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- ===== ОБЩИЙ HEADER (логотип + навигация + бургер-меню) ===== -->
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="logo-mark">Б</span><span>Бекем Курулуш</span>
+      </a>
+      <!-- Кнопка-бургер для мобильных устройств -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li><li class="nav-item"><a class="nav-link" href="works.html">Наши работы</a></li><li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li><li class="nav-item"><a class="nav-link active" href="contacts.html">Контакты</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-accent" href="contacts.html">Заказать звонок</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="page-banner"><div class="container"><h1>Контакты</h1></div></section>
+<section class="section"><div class="container"><div class="row g-5">
+  <!-- Контактные данные (замените заглушки) -->
+  <div class="col-lg-5">
+    <h2 class="section-title text-start">Свяжитесь с нами</h2>
+    <ul class="list-unstyled contact-list">
+      <li><strong>Адрес:</strong> г. Бишкек, пр. Чуй, 000 (заглушка)</li>
+      <li><strong>Телефон:</strong> <a href="tel:+996555000000">+996 (555) 00-00-00</a></li>
+      <li><strong>Email:</strong> <a href="mailto:info@bekem.kg">info@bekem.kg</a></li>
+      <li><strong>График:</strong> Пн–Сб, 9:00–18:00</li>
+    </ul>
+    <!-- Заглушка карты: вместо неё вставьте iframe Google/2GIS -->
+    <div class="ph ph-lg" role="img" aria-label="Карта: Бишкек (заглушка)"><span>Карта: Бишкек (заглушка)</span></div>
+  </div>
+  <!-- Форма обратной связи; проверка в script.js -->
+  <div class="col-lg-7">
+    <form id="contactForm" class="card-box" novalidate>
+      <h3>Оставить заявку</h3>
+      <div class="mb-3"><label class="form-label" for="name">Имя</label>
+        <input class="form-control" id="name" required minlength="2">
+        <div class="invalid-feedback">Введите имя (минимум 2 символа).</div></div>
+      <div class="mb-3"><label class="form-label" for="phone">Телефон</label>
+        <input class="form-control" id="phone" type="tel" placeholder="+996 555 00 00 00" required pattern="^\+?[0-9\s\-()]{9,16}$">
+        <div class="invalid-feedback">Введите корректный номер телефона.</div></div>
+      <div class="mb-3"><label class="form-label" for="email">Email</label>
+        <input class="form-control" id="email" type="email" required>
+        <div class="invalid-feedback">Введите корректный email.</div></div>
+      <div class="mb-3"><label class="form-label" for="msg">Сообщение</label>
+        <textarea class="form-control" id="msg" rows="4" required minlength="10"></textarea>
+        <div class="invalid-feedback">Опишите задачу (минимум 10 символов).</div></div>
+      <button class="btn btn-accent" type="submit">Отправить</button>
+      <div id="formOk" class="alert alert-success mt-3 d-none">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+    </form>
+  </div>
+</div></div></section>
+</main>
+
+<!-- ===== ОБЩИЙ FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="text-white">Бекем Курулуш</h5>
+        <p>Строим надёжно, как горы Ала-Тоо. Дома, ремонт, отделка и проектирование в Бишкеке и Чуйской области.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6 class="text-white">Навигация</h6>
+        <ul class="list-unstyled"><li><a href="index.html">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="works.html">Наши работы</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-5">
+        <h6 class="text-white">Контакты</h6>
+        <ul class="list-unstyled">
+          <li>г. Бишкек, пр. Чуй, 000 (заглушка)</li>
+          <li><a href="tel:+996555000000">+996 (555) 00-00-00</a></li>
+          <li><a href="mailto:info@bekem.kg">info@bekem.kg</a></li>
+          <li>Пн–Сб: 9:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary">
+    <p class="small mb-0">&copy; <span id="year">2026</span> Бекем Курулуш. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (бургер-меню) и наш скрипт -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
